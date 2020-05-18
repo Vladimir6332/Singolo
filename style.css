@@ -3,6 +3,7 @@
 }
 
 body {
+  width: 1020px;
   margin: 0 auto;
 }
 
@@ -15,7 +16,7 @@ h1 {
 .header {
   display: flex;
   flex-wrap: wrap;
-  width: 1020px;
+  width: 100%;
   height: 95px;
   margin: 0 auto;
 
@@ -102,3 +103,122 @@ h1 {
 }
 
 /*Slider*/
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: #f06c64;
+}
+
+.slider-list {
+  display: flex;
+  height: 100%;
+}
+
+.slider-list__item {
+  display: flex;
+  height: 100%;
+}
+
+.phone,
+.phone-horizontal {
+  display: flex;
+  width: 215px;
+  height: 458px;
+  margin: 53px 0 0 112px;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #f2f2f2;
+  border-radius: 27px;
+  box-shadow: 23px 23px 0px 2px #ce5d56;
+}
+
+.phone__microphone {
+  width: 4px;
+  height: 4px;
+  margin-top: 17px;
+
+  background-color: #eb5055;
+  border: 2.5px solid #d8d8d8;
+  border-radius: 50%;
+}
+
+.phone__speaker {
+  width: 36px;
+  height: 5px;
+  margin-top: 10px;
+  border-radius: 3px;
+  background-color: #acacac;
+}
+
+.phone__screen {
+  width: 188px;
+  height: 333px;
+  margin-top: 21px;
+  border-radius: 5px;
+  background: url(./assets/images/Background-vertical.png);
+  background-position: -14px -135px;
+  border: 3px solid #c6c6c6;
+}
+
+.phone__button {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  margin-top: 7px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fafafa;
+}
+
+.button-square {
+  width: 13px;
+  height: 13px;
+  border: 2px solid #c2c2c2;
+  border-radius: 6px;
+  background-color: fafafa;
+}
+
+.phone-horizontal {
+  margin-left: 220px;
+  transform: rotate(90deg);
+  box-shadow: 23px -24px 0px 2px #ce5d56;
+}
+
+.phone-horizontal .phone__screen {
+  background: url(./assets/images/Background-horizontal.png);
+  background-position: -119px -122px;
+}
+
+.slider__arrow-left {
+  position: absolute;
+  top: 278px;
+  left: 40px;
+  display: flex;
+  width: 20px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.slider__arrow-right {
+  position: absolute;
+  top: 278px;
+  right: 38px;
+  display: flex;
+  width: 20px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.slider__arrow-left img:hover,
+.slider__arrow-right img:hover {
+  width: 18px;
+}
