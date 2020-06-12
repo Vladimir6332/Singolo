@@ -302,3 +302,11 @@ h1 {
   font-family: 'Lato';
   text-align: justify;
 }
+
+.services-delimiter {
+  position: relative;
+  width: 100%;
+  bottom: 3px;
+  height: 6px;
+  background-color: #ffffff;
+}
