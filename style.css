@@ -568,9 +568,10 @@ h1 {
 /*Section Form*/
 
 .get-quote {
+  box-sizing: border-box;
   width: 100%;
   height: 649px;
-  padding: 20px 40px 0 40px;
+  padding: 68px 40px 0 40px;
   background-color: #f06c64;
 }
 
@@ -580,4 +581,105 @@ h1 {
   color: #f0d8d9;
   font-family: 'Lato Bold', 'AdobeInvisFont', 'MyriadPro-Regular';
   font-weight: 900;
+}
+
+.get-quote__info {
+  margin-top: 27px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #f0d8d9;
+  font-family: 'Lato Light', 'AdobeInvisFont', 'MyriadPro-Regular';
+  font-weight: 300;
+  text-align: justify;
+}
+
+.form-container {
+  display: flex;
+  width: 100%;
+  margin-top: 44px;
+}
+
+.form {
+  width: 619px;
+  height: 365px;
+  margin-right: 21px;
+}
+
+.form__list {
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+}
+
+.form__input-text,
+.form__input-email,
+.form__text-area {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 16px;
+  background-color: #d6564f;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #fff;
+  font-family: 'Lato', 'AdobeInvisFont', 'MyriadPro-Regular';
+  font-weight: 400;
+  text-align: left;
+}
+
+.form__input-text,
+.form__input-email {
+  height: 38px;
+  padding: 0 35px 2px 15px;
+}
+
+.form__text-area {
+  height: 202px;
+  padding-left: 15px;
+  resize: none;
+}
+
+.form__input-text:focus,
+.form__input-email:focus,
+.form__text-area:focus {
+  outline: none;
+}
+
+.form__input-text::placeholder,
+.form__input-email::placeholder,
+.form__text-area::placeholder {
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-family: 'Lato', 'AdobeInvisFont', 'MyriadPro-Regular';
+  font-weight: 400;
+  text-align: left;
+}
+
+.form__text-area::placeholder {
+  padding-top: 7px;
+}
+
+.contact {
+  max-width: 300px;
+}
+.contact__title {
+  font-size: 18px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: 'Lato Black', 'AdobeInvisFont', 'MyriadPro-Regular';
+  font-weight: 900;
+  text-align: left;
+}
+
+.contact__info {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: 'Lato', 'AdobeInvisFont', 'MyriadPro-Regular';
+  font-weight: 400;
+  text-align: justify;
+  letter-spacing: -0.03px;
 }
