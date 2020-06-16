@@ -392,62 +392,62 @@ h1 {
 }
 
 .bg-tile1 {
-  background-image: url(/assets/images/tile1.png);
+  background-image: url(./assets/images/tile1.png);
   background-position-x: -8px;
   background-position-y: -11px;
 }
 .bg-tile2 {
-  background-image: url(/assets/images/tile2.png);
+  background-image: url(./assets/images/tile2.png);
   background-position-x: -82px;
   background-position-y: center;
 }
 .bg-tile3 {
-  background-image: url(/assets/images/tile3.png);
+  background-image: url(./assets/images/tile3.png);
   background-position-x: -11px;
   background-position-y: -1px;
 }
 .bg-tile4 {
-  background-image: url(/assets/images/tile4.png);
+  background-image: url(./assets/images/tile4.png);
   background-position-x: -24px;
   background-position-y: -2px;
 }
 .bg-tile5 {
-  background-image: url(/assets/images/tile5.png);
+  background-image: url(./assets/images/tile5.png);
   background-position-x: -10px;
   background-position-y: -16px;
 }
 .bg-tile6 {
-  background-image: url(/assets/images/tile6.png);
+  background-image: url(./assets/images/tile6.png);
   background-position-x: -16px;
   background-position-y: -4px;
 }
 .bg-tile7 {
-  background-image: url(/assets/images/tile7.png);
+  background-image: url(./assets/images/tile7.png);
   background-position-x: -31px;
   background-position-y: -39px;
 }
 .bg-tile8 {
-  background-image: url(/assets/images/tile8.png);
+  background-image: url(./assets/images/tile8.png);
   background-position-x: -24px;
   background-position-y: -32px;
 }
 .bg-tile9 {
-  background-image: url(/assets/images/tile9.png);
+  background-image: url(./assets/images/tile9.png);
   background-position-x: -16px;
   background-position-y: -2px;
 }
 .bg-tile10 {
-  background-image: url(/assets/images/tile10.png);
+  background-image: url(./assets/images/tile10.png);
   background-position-x: -141px;
   background-position-y: -113px;
 }
 .bg-tile11 {
-  background-image: url(/assets/images/tile11.png);
+  background-image: url(./assets/images/tile11.png);
   background-position-x: -144px;
   background-position-y: -175px;
 }
 .bg-tile12 {
-  background-image: url(/assets/images/tile12.png);
+  background-image: url(./assets/images/tile12.png);
   background-position-x: -36px;
   background-position-y: -60px;
 }
@@ -520,16 +520,13 @@ h1 {
 
 .member__info {
   margin-top: 10px;
+  margin-bottom: 24px;
   font-size: 12px;
   line-height: 21px;
   color: #767e9e;
   font-family: 'Lato', 'AdobeInvisFont', 'MyriadPro-Regular';
   font-weight: 400;
   text-align: justify;
-}
-
-.social {
-  margin-top: 24px;
 }
 
 .social__list {
@@ -570,7 +567,7 @@ h1 {
 .get-quote {
   box-sizing: border-box;
   width: 100%;
-  height: 649px;
+  height: 648px;
   padding: 68px 40px 0 40px;
   background-color: #f06c64;
 }
@@ -601,7 +598,7 @@ h1 {
 
 .form {
   width: 619px;
-  height: 365px;
+  height: 415px;
   margin-right: 21px;
 }
 
@@ -634,6 +631,11 @@ h1 {
   padding: 0 35px 2px 15px;
 }
 
+.form__input-text:invalid,
+.form__input-email:invalid {
+  border: 1px solid red;
+}
+
 .form__text-area {
   height: 202px;
   padding-left: 15px;
@@ -642,7 +644,8 @@ h1 {
 
 .form__input-text:focus,
 .form__input-email:focus,
-.form__text-area:focus {
+.form__text-area:focus,
+.form__button-submit:focus {
   outline: none;
 }
 
@@ -659,6 +662,28 @@ h1 {
 
 .form__text-area::placeholder {
   padding-top: 7px;
+}
+
+.form__button-submit {
+  float: right;
+  box-sizing: border-box;
+  width: 200px;
+  background-color: salmon;
+  border: 1px solid orangered;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Lato', 'AdobeInvisFont', 'MyriadPro-Regular';
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+}
+
+.form__button-submit:hover {
+  border-color: orange;
+  background-color: #d6564f;
 }
 
 .contact {
@@ -682,4 +707,66 @@ h1 {
   font-weight: 400;
   text-align: justify;
   letter-spacing: -0.03px;
+}
+
+.contact__list {
+  margin-top: 19px;
+  list-style: none;
+}
+
+.contact__item,
+.contact__link {
+  display: flex;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: 'Lato', 'AdobeInvisFont', 'MyriadPro-Regular';
+  font-weight: 400;
+  text-align: justify;
+  letter-spacing: -0.03px;
+}
+
+.contact__icon-container {
+  display: flex;
+  width: 13px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.contact__link {
+  text-decoration: none;
+}
+
+.contact__link:hover {
+  font-weight: 500;
+  color: #fff;
+}
+
+.get-quote-delimiter {
+  width: 100%;
+  height: 6px;
+  background-color: #ea676b;
+}
+
+/*Footer*/
+
+.footer {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 77px;
+  padding: 0 32px 0 40px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d303a;
+}
+
+.footer__info {
+  font-size: 12px;
+  line-height: 6px;
+  color: #666d89;
+  font-family: 'Lato', 'AdobeInvisFont', 'MyriadPro-Regular';
+  font-weight: 400;
+  text-align: left;
 }
