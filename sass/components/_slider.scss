@@ -1,0 +1,54 @@
+.slider {
+  position: relative;
+  @include bg-shadow($bg-color: $color-background2, $shadow-color: #ea676b);
+}
+
+.slider__list {
+  @include flex-h-v();
+  height: 600px;
+  overflow: hidden;
+  list-style: none;
+}
+
+.slider__item {
+  @include flex-h-v();
+  width: 100%;
+  height: 100%;
+}
+
+.phones-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 105px 0 0 72px;
+}
+
+.phone-horizontal-wrapper {
+  padding-left: 220px;
+}
+
+.slider__arrow {
+  position: absolute;
+  @include flex-h-v();
+  width: 20px;
+  height: 32px;
+  background-image: url(../../assets/images/Arrow-left.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &_left {
+    top: 278px;
+    left: 40px;
+  }
+
+  &_right {
+    top: 278px;
+    right: 38px;
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    background-size: 19px;
+  }
+}

@@ -1,0 +1,41 @@
+.navigation {
+}
+
+.navigation__list {
+  @include flex-h-v();
+  @include font($size: 1.26rem, $height: 1.4rem, $weight: 700);
+  color: $color-menu;
+  text-align: right;
+  letter-spacing: -0.035em;
+  list-style: none;
+  padding-left: 0;
+  text-transform: uppercase;
+}
+
+.navigation__item {
+  @include flex-h-v();
+  cursor: pointer;
+  & + & {
+    margin-left: 26px;
+  }
+
+  & + &::before {
+    content: '';
+    position: relative;
+    right: 13px;
+    display: block;
+    width: 3px;
+    height: 3px;
+    background-color: $color-menu-dot;
+    border-radius: 50%;
+  }
+
+  &_active {
+    color: $color-menu-active;
+  }
+
+  &:hover {
+    color: $color-menu-active;
+    text-decoration: underline;
+  }
+}

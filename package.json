@@ -1,0 +1,23 @@
+{
+  "name": "singolo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "sass --watch sass/singolo.scss sass/singolo.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vladimir6332/singolo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vladimir6332/singolo/issues"
+  },
+  "homepage": "https://github.com/Vladimir6332/singolo#readme",
+  "dependencies": {
+    "normalize.scss": "^0.1.0"
+  }
+}

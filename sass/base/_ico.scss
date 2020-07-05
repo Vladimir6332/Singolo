@@ -1,0 +1,38 @@
+.ico {
+  @include flex-h-v();
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 2px solid #666d89;
+}
+
+.ico__service {
+  @include flex-h-v();
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  @extend %bg-single-center;
+
+  &_pen {
+    background-image: url('../../assets/images/pen.png');
+  }
+
+  &_bulb {
+    background-image: url('../../assets/images/bulb.png');
+  }
+
+  &_heart {
+    background-image: url('../../assets/images/heart.png');
+  }
+
+  &_phone {
+    background-image: url('../../assets/images/phone.png');
+  }
+
+  &_bubble {
+    background-image: url('../../assets/images/bubble.png');
+  }
+
+  &_star {
+    background-image: url('../../assets/images/star.png');
+  }
+}

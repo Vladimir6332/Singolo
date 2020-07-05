@@ -1,0 +1,23 @@
+@import '../node_modules/normalize.scss/normalize.scss';
+@import 'abstract/constants';
+@import 'abstract/mixins';
+@import 'abstract/placeholders';
+
+//Layouts
+@import 'layouts/wrapper';
+@import 'layouts/header';
+@import 'layouts/layout-columns';
+
+//Base
+@import 'base/base';
+@import 'base/logo';
+@import 'base/navigation';
+@import 'base/ico';
+@import 'base/tabs';
+
+//Components
+@import 'components/slider';
+@import 'components/phone';
+@import 'components/services';
+@import 'components/service';
+@import 'components/portfolio';

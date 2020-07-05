@@ -1,0 +1,14 @@
+.logo {
+  @include flex-h-v(start, flex-end);
+  cursor: pointer;
+}
+
+.logo__title {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.logo__symbol {
+  color: $color-background2;
+  @include font($size: 2.5rem, $height: 3rem, $weight: 700);
+}

@@ -1,0 +1,21 @@
+@mixin flex-h-v($horizontal: center, $vertical: center) {
+  display: flex;
+  justify-content: $horizontal;
+  align-items: $vertical;
+}
+
+@mixin font($size: 1.8rem, $height: 3rem, $weight: 300, $style: normal) {
+  font-family: $font-primary;
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+@mixin bg-shadow(
+  $bg-color: $color-background1,
+  $shadow-color: lighten($color: $bg-color, $amount: 5)
+) {
+  background-color: $bg-color;
+  box-shadow: inset 0 -6px 0 $shadow-color;
+}

@@ -1,0 +1,18 @@
+.service {
+  display: flex;
+}
+
+.service__ico-wrapper {
+  margin-right: 20px;
+  margin-top: 2px;
+}
+
+.service__title {
+  margin: 0;
+}
+
+.service__info {
+  margin-top: 10px;
+  @include font($size: 1.2rem, $height: 2.2rem, $weight: 400);
+  text-align: justify;
+}

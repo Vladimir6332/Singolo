@@ -1,0 +1,12 @@
+.layout-2-columns {
+  display: flex;
+}
+
+.layout-3-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  > * {
+    flex-basis: calc(100% / 3);
+  }
+}

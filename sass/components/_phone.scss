@@ -1,0 +1,64 @@
+.phone {
+  @include flex-h-v($horizontal: flex-start);
+  width: 215px;
+  height: 458px;
+  flex-direction: column;
+  background-color: $color-background3;
+  border-radius: 27px;
+  box-shadow: 23px 23px 0px 2px #ce5d56;
+
+  &_horizontal {
+    transform: rotate(90deg);
+    box-shadow: 23px -24px 0px 2px #ce5d56;
+  }
+}
+
+.phone__microphone {
+  width: 4px;
+  height: 4px;
+  margin-top: 17px;
+  background-color: #eb5055;
+  border: 2.5px solid #d8d8d8;
+  border-radius: 50%;
+}
+
+.phone__speaker {
+  width: 36px;
+  height: 5px;
+  margin-top: 10px;
+  border-radius: 3px;
+  background-color: #acacac;
+}
+
+.phone__screen {
+  width: 188px;
+  height: 333px;
+  margin-top: 21px;
+  border-radius: 5px;
+  background: url(../../assets/images/Background-vertical.png);
+  background-position: -14px -135px;
+  border: 3px solid #c6c6c6;
+
+  &_horizontal {
+    image-rendering: pixelated;
+    background: url(../../assets/images/Background-horizontal.png);
+    background-position: -119px -122px;
+  }
+}
+
+.phone__button {
+  @include flex-h-v();
+  width: 40px;
+  height: 40px;
+  margin-top: 7px;
+  border-radius: 50%;
+  background-color: #fafafa;
+}
+
+.phone__button-square {
+  width: 13px;
+  height: 13px;
+  border: 2px solid #c2c2c2;
+  border-radius: 6px;
+  background-color: #fafafa;
+}

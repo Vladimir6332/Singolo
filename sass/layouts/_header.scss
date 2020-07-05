@@ -1,0 +1,14 @@
+.header {
+  padding: 28px 0 37px 0;
+  @include bg-shadow($bg-color: $color-background1);
+}
+
+.header__wrapper {
+  @include flex-h-v(space-between, flex-end);
+}
+
+.header__navigation {
+  > * {
+    margin: 0;
+  }
+}
