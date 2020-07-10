@@ -1,0 +1,63 @@
+.form {
+}
+
+.form__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+.form__input-text,
+.form__input-email,
+.form__text-area {
+  box-sizing: border-box;
+  width: 100%;
+  height: 38px;
+  margin-bottom: 16px;
+  padding: 0 35px 0 14px;
+  background-color: #d6564f;
+  border: none;
+  border-radius: 5px;
+  @include font($size: 1.2rem, $height: 1.2rem, $weight: 400);
+  color: $color-input-text;
+
+  &:invalid {
+    border: 1px solid red;
+  }
+
+  &::placeholder {
+    color: #f48c8f;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.form__text-area {
+  height: 202px;
+  padding-top: 12px;
+  resize: none;
+}
+
+.form__button-submit {
+  float: right;
+  box-sizing: border-box;
+  padding: 5px 20px;
+  background-color: rgb(245, 149, 94);
+  border: 1px solid orangered;
+  border-radius: 5px;
+  @include font($size: 1.4rem, $height: 1.7rem, $weight: 700);
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.form__button-submit:hover {
+  border-color: orange;
+  background-color: #d6564f;
+}

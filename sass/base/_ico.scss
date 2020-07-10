@@ -1,13 +1,9 @@
 .ico {
   @include flex-h-v();
-  flex-shrink: 0;
-  border-radius: 50%;
-  border: 2px solid #666d89;
 }
 
-.ico__service {
-  @include flex-h-v();
-  flex-shrink: 0;
+.ico-service {
+  @extend %ico-style;
   width: 56px;
   height: 56px;
   @extend %bg-single-center;
@@ -34,5 +30,54 @@
 
   &_star {
     background-image: url('../../assets/images/star.png');
+  }
+}
+
+.ico-social {
+  box-sizing: border-box;
+  @extend %ico-style;
+  width: 32px;
+  height: 32px;
+  border-width: 1px;
+  @extend %bg-single-center;
+
+  &:hover {
+    border: 2px solid #666d89;
+    background-color: #fff;
+  }
+
+  &_facebook {
+    background-image: url('../../assets/images/facebook.svg');
+  }
+
+  &_google {
+    background-image: url('../../assets/images/google+.svg');
+  }
+
+  &_twitter {
+    background-image: url('../../assets/images/twitter.svg');
+  }
+
+  &_linkedin {
+    background-image: url('../../assets/images/linkedin.svg');
+  }
+}
+
+.ico-contact {
+  box-sizing: border-box;
+  width: 13px;
+  height: 13px;
+  @extend %bg-single-center;
+
+  &_location {
+    background-image: url('../../assets/images/contact-location.svg');
+  }
+
+  &_phone {
+    background-image: url('../../assets/images/contact-phone.svg');
+  }
+
+  &_mail {
+    background-image: url('../../assets/images/contact-mail.svg');
   }
 }

@@ -1,6 +1,3 @@
-.tabs {
-}
-
 .tabs__list {
   @include flex-h-v($horizontal: flex-start);
   list-style: none;

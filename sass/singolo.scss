@@ -5,8 +5,9 @@
 
 //Layouts
 @import 'layouts/wrapper';
-@import 'layouts/header';
 @import 'layouts/layout-columns';
+@import 'layouts/header';
+@import 'layouts/footer';
 
 //Base
 @import 'base/base';
@@ -14,6 +15,7 @@
 @import 'base/navigation';
 @import 'base/ico';
 @import 'base/tabs';
+@import 'base/form';
 
 //Components
 @import 'components/slider';
@@ -21,3 +23,9 @@
 @import 'components/services';
 @import 'components/service';
 @import 'components/portfolio';
+@import 'components/tiles';
+@import 'components/about-us';
+@import 'components/employee';
+@import 'components/social';
+@import 'components/get-quote';
+@import 'components/contact';

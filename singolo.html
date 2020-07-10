@@ -1,390 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Singolo</title>
     <link rel="stylesheet" href="fonts.css" />
     <link rel="stylesheet" href="./sass/singolo.css" />
     <script src="./script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="wrapper header__wrapper">
-
-            <div class="logo">
-                <h1 class="logo__title">Singolo</h1>
-                <span class="logo__symbol">*</span>
-            </div>
-            <nav class="navigation header__navigation">
-                <ul class="navigation__list">
-                    <li class="navigation__item navigation__item_active">Home</li>
-                    <li class="navigation__item">Services</li>
-                    <li class="navigation__item">Portfolio</li>
-                    <li class="navigation__item">About</li>
-                    <li class="navigation__item">Contact</li>
-                </ul>
-            </nav>
-
+      <div class="wrapper header__wrapper">
+        <div class="logo">
+          <h1 class="logo__title">Singolo</h1>
+          <span class="logo__symbol">*</span>
         </div>
+        <nav class="navigation header__navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item_active">Home</li>
+            <li class="navigation__item">Services</li>
+            <li class="navigation__item">Portfolio</li>
+            <li class="navigation__item">About</li>
+            <li class="navigation__item">Contact</li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <div class="slider">
-        <div class="wrapper slider-wrapper">
-            <div class="slider__list">
-                <div class="slider__item">
-                    <div class="phones-wrapper">
-                        <div class="phone">
-                            <div class="phone__microphone"></div>
-                            <div class="phone__speaker"></div>
-                            <div class="phone__screen"></div>
-                            <div class="phone__button">
-                                <div class="phone__button-square"></div>
-                            </div>                      
-                        </div>
-                        <div class="phone-horizontal-wrapper">
-                            <div class="phone phone_horizontal">
-                                <div class="phone__microphone"></div>
-                                <div class="phone__speaker"></div>
-                                <div class="phone__screen phone__screen_horizontal"></div>
-                                <div class="phone__button">
-                                    <div class="phone__button-square"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="wrapper slider-wrapper">
+        <div class="slider__list">
+          <div class="slider__item">
+            <div class="phones-wrapper">
+              <div class="phone">
+                <div class="phone__microphone"></div>
+                <div class="phone__speaker"></div>
+                <div class="phone__screen"></div>
+                <div class="phone__button">
+                  <div class="phone__button-square"></div>
                 </div>
+              </div>
+              <div class="phone-horizontal-wrapper">
+                <div class="phone phone_horizontal">
+                  <div class="phone__microphone"></div>
+                  <div class="phone__speaker"></div>
+                  <div class="phone__screen phone__screen_horizontal"></div>
+                  <div class="phone__button">
+                    <div class="phone__button-square"></div>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <div class="slider__arrow slider__arrow_left">                
-            </div>
-            <div class="slider__arrow slider__arrow_right">                
-            </div>
+          </div>
         </div>
+
+        <div class="slider__arrow slider__arrow_left"></div>
+        <div class="slider__arrow slider__arrow_right"></div>
+      </div>
     </div>
     <section class="services">
-        <div class="wrapper services-wrapper">
-            <h2 class="services__title">Our Services</h2>
-            <p class="services__info">
-                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
-                Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
-                lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
-                tortor mauris condimentum nibh.
-            </p>
-            <div class="services__list layout-3-columns">
-                <div class="service services__item">
-                    <div class="service__ico-wrapper">
-                        <div class="ico">
-                            <div class="ico__service ico__service_pen"></div>
-                        </div>
-                    </div>
-                    <div class="service__article">
-                        <h4 class="service__title">Custom Design</h4>
-                        <p class="service__info">
-                            Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
-                            laoreet, viverra lacus ut, ultrices velit.
-                        </p>
-                    </div>
-                </div>
-                <div class="service services__item">
-                    <div class="service__ico-wrapper">
-                        <div class="ico">
-                            <div class="ico__service ico__service_bulb"></div>
-                        </div>
-                    </div>
-                    <div class="service__article">
-                        <h4 class="service__title">Inovative ideas</h4>
-                        <p class="service__info">
-                            Quisque luctus, quam eget molestie com&shy;modo, lacus purus
-                            cursus purus, nec rutrum tellus dolor id lorem.
-                        </p>
-                    </div>
-                </div>
-                <div class="service services__item">
-                    <div class="service__ico-wrapper">
-                        <div class="ico">
-                            <div class="ico__service ico__service_heart"></div>
-                        </div>
-                    </div>
-                    <div class="service__article">
-                        <h4 class="service__title">Love is The Answer</h4>
-                        <p class="service__info">
-                            Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
-                            turpis, et consequat felis. Quisque condimentum.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="service services__item">
-                    <div class="service__ico-wrapper">
-                        <div class="ico">
-                            <div class="ico__service ico__service_phone"></div>
-                        </div>
-                    </div>
-                    <div class="service__article">
-                        <h4 class="service__title">Responsive Layout</h4>
-                        <p class="service__info">
-                            Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas
-                            blandit nunc ligula. Prae&shy;sent elit leo.
-                        </p>
-                    </div>
-                </div>
-                <div class="service services__item">
-                    <div class="service__ico-wrapper">
-                        <div class="ico">
-                            <div class="ico__service ico__service_bubble"></div>
-                        </div>
-                    </div>
-                    <div class="service__article">
-                        <h4 class="service__title">24 / 7 Support</h4>
-                        <p class="service__info">
-                            Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi.
-                            Nulla a sem erat. Pellen&shy;tesque egestas venenatis lorem .
-                        </p>
-                    </div>
-                </div>
-                <div class="service services__item">
-                    <div class="service__ico-wrapper">
-                        <div class="ico">
-                            <div class="ico__service ico__service_star"></div>
-                        </div>
-                    </div>
-                    <div class="service__article">
-                        <h4 class="service__title">Feel Like A Star</h4>
-                        <p class="service__info">
-                            Quisque hendrerit purus dapibus, ornare nibh vitae, viverra
-                            nibh. Fusce vitae aliquam tellus.
-                        </p>
-                    </div>
-                </div>
+      <div class="wrapper services-wrapper">
+        <h2>Our Services</h2>
+        <p>
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
+          Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
+          lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+          tortor mauris condimentum nibh.
+        </p>
+        <div class="services__list layout-3-columns">
+          <div class="service services__item">
+            <div class="service__ico-wrapper">
+              <div class="ico">
+                <div class="ico-service ico-service_pen"></div>
+              </div>
             </div>
+            <div class="service__article">
+              <h4 class="service__title">Custom Design</h4>
+              <p class="service__info">
+                Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
+                laoreet, viverra lacus ut, ultrices velit.
+              </p>
+            </div>
+          </div>
+          <div class="service services__item">
+            <div class="service__ico-wrapper">
+              <div class="ico">
+                <div class="ico-service ico-service_bulb"></div>
+              </div>
+            </div>
+            <div class="service__article">
+              <h4 class="service__title">Inovative ideas</h4>
+              <p class="service__info">
+                Quisque luctus, quam eget molestie com&shy;modo, lacus purus
+                cursus purus, nec rutrum tellus dolor id lorem.
+              </p>
+            </div>
+          </div>
+          <div class="service services__item">
+            <div class="service__ico-wrapper">
+              <div class="ico">
+                <div class="ico-service ico-service_heart"></div>
+              </div>
+            </div>
+            <div class="service__article">
+              <h4 class="service__title">Love is The Answer</h4>
+              <p class="service__info">
+                Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
+                turpis, et consequat felis. Quisque condimentum.
+              </p>
+            </div>
+          </div>
+
+          <div class="service services__item">
+            <div class="service__ico-wrapper">
+              <div class="ico">
+                <div class="ico-service ico-service_phone"></div>
+              </div>
+            </div>
+            <div class="service__article">
+              <h4 class="service__title">Responsive Layout</h4>
+              <p class="service__info">
+                Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas
+                blandit nunc ligula. Prae&shy;sent elit leo.
+              </p>
+            </div>
+          </div>
+          <div class="service services__item">
+            <div class="service__ico-wrapper">
+              <div class="ico">
+                <div class="ico-service ico-service_bubble"></div>
+              </div>
+            </div>
+            <div class="service__article">
+              <h4 class="service__title">24 / 7 Support</h4>
+              <p class="service__info">
+                Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi.
+                Nulla a sem erat. Pellen&shy;tesque egestas venenatis lorem .
+              </p>
+            </div>
+          </div>
+          <div class="service services__item">
+            <div class="service__ico-wrapper">
+              <div class="ico">
+                <div class="ico-service ico-service_star"></div>
+              </div>
+            </div>
+            <div class="service__article">
+              <h4 class="service__title">Feel Like A Star</h4>
+              <p class="service__info">
+                Quisque hendrerit purus dapibus, ornare nibh vitae, viverra
+                nibh. Fusce vitae aliquam tellus.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="portfolio">
-        <div class="wrapper portfolio-wrapper">
-            <h2 class="portfolio__title">Portfolio</h2>
-            <p class="portfolio__info">
-                Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
-                lacinia odio sem nec elit.
-            </p>
-            <div class="tabs-wrapper">
-                <div class="tabs">
-                    <ul class="tabs__list">
-                        <li class="tabs__item tabs__item_active">All</li>
-                        <li class="tabs__item">Web Design</li>
-                        <li class="tabs__item">Graphic Design</li>
-                        <li class="tabs__item">Artwork</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="tile">
-                <ul class="tile__list layout-4-columns">
-                    <li class="tile__item bg-tile1"></li>
-                    <li class="tile__item bg-tile2"></li>
-                    <li class="tile__item bg-tile3"></li>
-                    <li class="tile__item bg-tile4"></li>
-                    <li class="tile__item bg-tile5"></li>
-                    <li class="tile__item bg-tile6"></li>
-                    <li class="tile__item bg-tile7"></li>
-                    <li class="tile__item bg-tile8"></li>
-                    <li class="tile__item bg-tile9"></li>
-                    <li class="tile__item bg-tile10"></li>
-                    <li class="tile__item bg-tile11"></li>
-                    <li class="tile__item bg-tile12"></li>
-                    <li class="tile__item bg-tile9"></li>
-                    <li class="tile__item bg-tile10"></li>
-                    <li class="tile__item bg-tile11"></li>
-                    <li class="tile__item bg-tile12"></li>
-                </ul>
-            </div>
+      <div class="wrapper portfolio-wrapper">
+        <h2>Portfolio</h2>
+        <p>
+          Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
+          lacinia odio sem nec elit.
+        </p>
+        <div class="tabs-wrapper">
+          <div class="tabs">
+            <ul class="tabs__list">
+              <li class="tabs__item tabs__item_active">All</li>
+              <li class="tabs__item">Web Design</li>
+              <li class="tabs__item">Graphic Design</li>
+              <li class="tabs__item">Artwork</li>
+            </ul>
+          </div>
         </div>
+        <div class="tiles">
+          <ul class="tiles__list layout-4-columns">
+            <li class="tiles__item tiles__item_background1"></li>
+            <li class="tiles__item tiles__item_background2"></li>
+            <li class="tiles__item tiles__item_background3"></li>
+            <li class="tiles__item tiles__item_background4"></li>
+            <li class="tiles__item tiles__item_background5"></li>
+            <li class="tiles__item tiles__item_background6"></li>
+            <li class="tiles__item tiles__item_background7"></li>
+            <li class="tiles__item tiles__item_background8"></li>
+            <li class="tiles__item tiles__item_background9"></li>
+            <li class="tiles__item tiles__item_background10"></li>
+            <li class="tiles__item tiles__item_background11"></li>
+            <li class="tiles__item tiles__item_background12"></li>
+            <li class="tiles__item tiles__item_background9"></li>
+            <li class="tiles__item tiles__item_background10"></li>
+            <li class="tiles__item tiles__item_background11"></li>
+            <li class="tiles__item tiles__item_background12"></li>
+          </ul>
+        </div>
+      </div>
     </section>
     <section class="about-us">
-        <div class="wrapper">
-            <h2>About Us</h2>
-            <p class="info info_section">
-                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
-                Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
-                lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
-                tortor mauris condimentum nibh.
-            </p>
-            <div class="employee-wrapper">
-                <ul class="layout-3-columns">
-                    <li class="employee">
-                        <div class="employee__image-container">
-                            <img src="./assets/images/member1.png" alt="Adam Jensen" />
-                        </div>
-                        <h4>
-                            Adam Jensen
-                        </h4>
-                        <p class="info info_item">
-                            Quisque luctus, quam eget molestie commodo, lacus purus cursus
-                            purus, nec rutrum tellus dolor id lorem.
-                        </p>
-                        <div class="social">
-                            <ul class="social__list">
-                                <li class="social__item">
-                                    <a class="social__link" href="https://www.facebook.com/"><img
-                                            src="./assets/images/facebook.svg" alt="facebook" /></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="https://myaccount.google.com/"><img
-                                            src="./assets/images/google+.svg" alt="google+" /></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="https://twitter.com/"><img
-                                            src="./assets/images/twitter.svg" alt="twitter" /></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="https://www.linkedin.com/"><img
-                                            src="./assets/images/linkedin.svg" alt="linkedin" /></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="employee">
-                        <div class="employee__image-container">
-                            <img src="./assets/images/member2.png" alt="Desmond Miles" />
-                        </div>
-                        <h4>Desmond Miles</h4>
-                        <p class="info info_item">
-                            Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
-                            laoreet, viverra lacus ut, ultrices velit.
-                        </p>
-                        <div class="social">
-                            <ul class="social__list">
-                                <li class="social__item">
-                                    <a class="social__link" href="https://www.facebook.com/"><img
-                                            src="./assets/images/facebook.svg" alt="facebook" /></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="https://myaccount.google.com/"><img
-                                            src="./assets/images/google+.svg" alt="google+" /></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="https://twitter.com/"><img
-                                            src="./assets/images/twitter.svg" alt="twitter" /></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="https://www.linkedin.com/"><img
-                                            src="./assets/images/linkedin.svg" alt="linkedin" /></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="employee">
-                        <div class="employee__image-container">
-                            <img src="./assets/images/member3.png" alt="Scolara Visari" />
-                        </div>
-                        <h4>Scolara Visari</h4>
-                        <p class="info info_item">
-                            Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
-                            turpis, et consequat felis. Quisque condimentum.
-                        </p>
-                        <div class="social">
-                            <ul class="social__list">
-                                <li class="social__item">
-                                    <a class="social__link" href="https://www.facebook.com/"><img
-                                            src="./assets/images/facebook.svg" alt="facebook" /></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="https://myaccount.google.com/"><img
-                                            src="./assets/images/google+.svg" alt="google+" /></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="https://twitter.com/"><img
-                                            src="./assets/images/twitter.svg" alt="twitter" /></a>
-                                </li>
-                                <li class="social__item">
-                                    <a class="social__link" href="https://www.linkedin.com/"><img
-                                            src="./assets/images/linkedin.svg" alt="linkedin" /></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
+      <div class="wrapper about-us-wrapper">
+        <h2>About Us</h2>
+        <p>
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
+          Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
+          lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+          tortor mauris condimentum nibh.
+        </p>
+        <div class="employees-wrapper">
+          <ul class="about-us__list layout-3-columns">
+            <li class="employee about-us__item">
+              <div class="employee__image employee__image_employee1"></div>
+              <h4 class="employee__title">Adam Jensen</h4>
+              <p class="employee__info">
+                Quisque luctus, quam eget molestie commodo, lacus purus cursus
+                purus, nec rutrum tellus dolor id lorem.
+              </p>
+              <div class="social">
+                <ul class="social__list">
+                  <li class="social__item ico-social ico-social_facebook">
+                    <a
+                      class="social__link"
+                      href="https://www.facebook.com/"
+                    ></a>
+                  </li>
+                  <li class="social__item ico-social ico-social_google">
+                    <a
+                      class="social__link"
+                      href="https://myaccount.google.com/"
+                    ></a>
+                  </li>
+                  <li class="social__item ico-social ico-social_twitter">
+                    <a class="social__link" href="https://twitter.com/"></a>
+                  </li>
+                  <li class="social__item ico-social ico-social_linkedin">
+                    <a
+                      class="social__link"
+                      href="https://www.linkedin.com/"
+                    ></a>
+                  </li>
                 </ul>
-            </div>
+              </div>
+            </li>
+            <li class="employee about-us__item">
+              <div class="employee__image employee__image_employee2"></div>
+              <h4 class="employee__title">Desmond Miles</h4>
+              <p class="employee__info">
+                Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
+                laoreet, viverra lacus ut, ultrices velit.
+              </p>
+              <div class="social">
+                <ul class="social__list">
+                  <li class="social__item ico-social ico-social_facebook">
+                    <a
+                      class="social__link"
+                      href="https://www.facebook.com/"
+                    ></a>
+                  </li>
+                  <li class="social__item ico-social ico-social_google">
+                    <a
+                      class="social__link"
+                      href="https://myaccount.google.com/"
+                    ></a>
+                  </li>
+                  <li class="social__item ico-social ico-social_twitter">
+                    <a class="social__link" href="https://twitter.com/"></a>
+                  </li>
+                  <li class="social__item ico-social ico-social_linkedin">
+                    <a
+                      class="social__link"
+                      href="https://www.linkedin.com/"
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="employee about-us__item">
+              <div class="employee__image employee__image_employee3"></div>
+              <h4 class="employee__title">Scolara Visari</h4>
+              <p class="employee__info">
+                Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
+                turpis, et consequat felis. Quisque condimentum.
+              </p>
+              <div class="social">
+                <ul class="social__list">
+                  <li class="social__item ico-social ico-social_facebook">
+                    <a
+                      class="social__link"
+                      href="https://www.facebook.com/"
+                    ></a>
+                  </li>
+                  <li class="social__item ico-social ico-social_google">
+                    <a
+                      class="social__link"
+                      href="https://myaccount.google.com/"
+                    ></a>
+                  </li>
+                  <li class="social__item ico-social ico-social_twitter">
+                    <a class="social__link" href="https://twitter.com/"></a>
+                  </li>
+                  <li class="social__item ico-social ico-social_linkedin">
+                    <a
+                      class="social__link"
+                      href="https://www.linkedin.com/"
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
     <section class="get-quote">
-        <div class="wrapper">
-            <h2>Get a Quote</h2>
-            <p class="info info_section">
-                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
-                mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia
-                odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor
-                mauris condimentum nibh.
-            </p>
-            <div class="get-quote__form">
-                <form class="form" action="" method="POST">
-                    <fieldset class="form__list">
-                        <input class="form__input-text" type="text" placeholder="Name (Required)"
-                            pattern="[A-Za-z\s]{2,}" required />
-                        <input class="form__input-email" type="email" placeholder="Email (Required)" required />
-                        <input class="form__input-text" type="text" placeholder="Subject" />
-                        <textarea class="form__text-area" placeholder="Describe your project in detail..."></textarea>
-                    </fieldset>
-                    <button class="form__button-submit" type="submit">Send</button>
-                </form>
-                <div class="contact">
-                    <p class="contact__title">Contact Information</p>
-                    <p class="contact__info">
-                        Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra
-                        nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero.
-                        Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
-                        et consequat felis.
-                    </p>
-                    <ul class="contact__list">
-                        <li class="contact__item">
-                            <div class="contact__icon-container">
-                                <img class="contact__icon" src="./assets/images/contact-location.png" alt="location" />
-                            </div>
-                            <p class="contact__description">Elm St. 14/05 Lost City</p>
-                        </li>
-                        <li class="contact__item">
-                            <div class="contact__icon-container">
-                                <img class="contact__icon" src="./assets/images/contact-phone.png" alt="phone" />
-                            </div>
-                            <a class="contact__link" href="tel:035283318635">03528 331 86 35</p>
-                        </li>
-                        <li class="contact__item">
-                            <div class="contact__icon-container">
-                                <img class="contact__icon" src="./assets/images/contact-mail.png" alt="mail" />
-                            </div>
-                            <a class="contact__link" href="mailto:info@singolo.com">info@singolo.com</a>
-                        </li>
-                    </ul>
-                </div>
-
+      <div class="wrapper get-quote-wrapper">
+        <h2 class="get-quote__title">Get a Quote</h2>
+        <p class="get-quote__info">
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
+          Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
+          lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+          tortor mauris condimentum nibh.
+        </p>
+        <div class="get-quote__form">
+          <div class="form-wrapper">
+            <form class="form" action="" method="POST">
+              <fieldset class="form__list">
+                <input
+                  class="form__input-text"
+                  type="text"
+                  placeholder="Name (Required)"
+                  pattern="[A-Za-z\s]{2,}"
+                  required
+                />
+                <input
+                  class="form__input-email"
+                  type="email"
+                  placeholder="Email (Required)"
+                  required
+                />
+                <input
+                  class="form__input-text"
+                  type="text"
+                  placeholder="Subject"
+                />
+                <textarea
+                  class="form__text-area"
+                  placeholder="Describe your project in detail..."
+                ></textarea>
+              </fieldset>
+              <button class="form__button-submit" type="submit">Send</button>
+            </form>
+          </div>
+          <div class="contact-wrapper">
+            <div class="contact">
+              <h4 class="contact__title">Contact Information</h4>
+              <p class="contact__info">
+                Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra
+                nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat
+                libero. Nulla sed nunc et tortor luctus faucibus. Morbi at
+                aliquet turpis, et consequat felis.
+              </p>
+              <ul class="contact__list">
+                <li class="contact__item">
+                  <div
+                    class="ico-contact ico-contact_location ico-contact-wrapper"
+                  ></div>
+                  <p class="contact__description">Elm St. 14/05 Lost City</p>
+                </li>
+                <li class="contact__item">
+                  <div
+                    class="ico-contact ico-contact_phone ico-contact-wrapper"
+                  ></div>
+                  <a class="contact__link" href="tel:035283318635"
+                    >03528 331 86 35</a
+                  >
+                </li>
+                <li class="contact__item">
+                  <div
+                    class="ico-contact ico-contact_mail ico-contact-wrapper"
+                  ></div>
+                  <a class="contact__link" href="mailto:info@singolo.com"
+                    >info@singolo.com</a
+                  >
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <footer class="footer">
-        <div class="wrapper">
-            <p class="info info_footer">© Copyright 2013</p>
-            <div class="social">
-                <ul class="social__list">
-                    <li class="social__item">
-                        <a class="social__link" href="https://www.facebook.com/"><img src="./assets/images/facebook.svg"
-                                alt="facebook" /></a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link" href="https://myaccount.google.com/"><img
-                                src="./assets/images/google+.svg" alt="google+" /></a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link" href="https://twitter.com/"><img src="./assets/images/twitter.svg"
-                                alt="twitter" /></a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link" href="https://www.linkedin.com/"><img src="./assets/images/linkedin.svg"
-                                alt="linkedin" /></a>
-                    </li>
-                </ul>
-            </div>
+      <div class="wrapper footer-wrapper">
+        <p class="footer__info">© Copyright 2013</p>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item ico-social ico-social_facebook">
+              <a class="social__link" href="https://www.facebook.com/"></a>
+            </li>
+            <li class="social__item ico-social ico-social_google">
+              <a class="social__link" href="https://myaccount.google.com/"></a>
+            </li>
+            <li class="social__item ico-social ico-social_twitter">
+              <a class="social__link" href="https://twitter.com/"></a>
+            </li>
+            <li class="social__item ico-social ico-social_linkedin">
+              <a class="social__link" href="https://www.linkedin.com/"></a>
+            </li>
+          </ul>
         </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

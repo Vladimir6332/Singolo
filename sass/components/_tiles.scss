@@ -1,0 +1,89 @@
+.tiles__list {
+  @include flex-h-v();
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > :nth-child(n + 13) {
+    display: none;
+  }
+}
+
+.tiles__item {
+  height: 187px;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+  &_background1 {
+    background-image: url(../../assets/images/tile1.png);
+    background-position-x: -8px;
+    background-position-y: -11px;
+  }
+
+  &_background2 {
+    background-image: url(../../assets/images/tile2.png);
+    background-position-x: -82px;
+    background-position-y: center;
+  }
+
+  &_background3 {
+    background-image: url(../../assets/images/tile3.png);
+    background-position-x: -11px;
+    background-position-y: -1px;
+  }
+
+  &_background4 {
+    background-image: url(../../assets/images/tile4.png);
+    background-position-x: -24px;
+    background-position-y: -2px;
+  }
+
+  &_background5 {
+    background-image: url(../../assets/images/tile5.png);
+    background-position-x: -10px;
+    background-position-y: -16px;
+  }
+
+  &_background6 {
+    background-image: url(../../assets/images/tile6.png);
+    background-position-x: -16px;
+    background-position-y: -4px;
+  }
+
+  &_background7 {
+    background-image: url(../../assets/images/tile7.png);
+    background-position-x: -31px;
+    background-position-y: -39px;
+  }
+
+  &_background8 {
+    background-image: url(../../assets/images/tile8.png);
+    background-position-x: -24px;
+    background-position-y: -32px;
+  }
+
+  &_background9 {
+    background-image: url(../../assets/images/tile9.png);
+    background-position-x: -16px;
+    background-position-y: -2px;
+  }
+
+  &_background10 {
+    background-image: url(../../assets/images/tile10.png);
+    background-position-x: -141px;
+    background-position-y: -113px;
+  }
+
+  &_background11 {
+    background-image: url(../../assets/images/tile11.png);
+    background-position-x: -144px;
+    background-position-y: -175px;
+  }
+
+  &_background12 {
+    background-image: url(../../assets/images/tile12.png);
+    background-position-x: -36px;
+    background-position-y: -60px;
+  }
+}

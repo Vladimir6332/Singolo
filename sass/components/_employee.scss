@@ -1,0 +1,27 @@
+.employee__image {
+  width: 100%;
+  height: 300px;
+
+  &_employee1 {
+    background-image: url(../../assets/images/member1.png);
+  }
+
+  &_employee2 {
+    background-image: url(../../assets/images/member2.png);
+  }
+
+  &_employee3 {
+    background-image: url(../../assets/images/member3.png);
+  }
+}
+
+.employee__title {
+  margin: 17px 0 0 0;
+}
+
+.employee__info {
+  margin-top: 10px;
+  margin-bottom: 22px;
+  @include font($size: 1.2rem, $height: 2.2rem, $weight: 400);
+  text-align: justify;
+}

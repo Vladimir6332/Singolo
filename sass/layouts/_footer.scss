@@ -1,0 +1,16 @@
+.footer {
+  @include bg-shadow($bg-color: $color-background1);
+}
+
+.footer-wrapper {
+  @include flex-h-v(space-between, center);
+  padding-bottom: 9px;
+  padding-top: 4px;
+}
+
+.footer__info {
+  @include font($size: 1.3rem, $height: 1.8rem, $weight: 900);
+  margin: 0;
+  text-align: center;
+  color: $color-title1;
+}

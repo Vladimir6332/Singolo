@@ -1,0 +1,22 @@
+.get-quote {
+  @include bg-shadow($bg-color: $color-background2);
+}
+
+.get-quote__title,
+.get-quote__info {
+  color: $color-info2;
+}
+
+.get-quote__form {
+  display: flex;
+  margin-top: 44px;
+}
+
+.form-wrapper {
+  margin-right: 20px;
+  flex-grow: 1;
+}
+
+.contact-wrapper {
+  flex-basis: 300px;
+}

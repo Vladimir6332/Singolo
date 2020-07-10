@@ -18,7 +18,7 @@ h1 {
 h2 {
   @include font($size: 3rem, $height: 3.6rem, $weight: 900);
   color: $color-title1;
-  margin-bottom: 0px;
+  margin-bottom: 18px;
 }
 
 h4 {
@@ -30,4 +30,9 @@ p {
   @include font();
   color: $color-info1;
   text-align: justify;
+  margin: 0 0 10px 0;
+}
+
+ul {
+  padding: 0;
 }
