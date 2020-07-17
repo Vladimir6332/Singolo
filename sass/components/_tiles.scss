@@ -8,82 +8,84 @@
   > :nth-child(n + 13) {
     display: none;
   }
+
+  @include media-tablet {
+    justify-content: space-between;
+  }
+
+  @include media-tablet-small {
+    > :nth-child(n + 9) {
+      display: none;
+    }
+  }
 }
 
 .tiles__item {
-  height: 187px;
+  height: calc(((100vw - 140px) / 4) * 187 / 220);
+  max-height: 187px;
   margin-bottom: 20px;
+  flex-shrink: 0;
   cursor: pointer;
+  background-size: 100%;
+  @extend %bg-single-center;
+
+  @include media-tablet {
+    flex-basis: calc((100vw - 120px) / 3);
+    margin-right: 0;
+    height: calc(((100vw - 120px) / 3) * 187 / 220);
+  }
+
+  @include media-tablet-small {
+    flex-basis: calc((100vw - 80px) / 2);
+    height: calc(((100vw - 80px) / 2) * 187 / 220);
+    max-height: none;
+  }
 
   &_background1 {
-    background-image: url(../../assets/images/tile1.png);
-    background-position-x: -8px;
-    background-position-y: -11px;
+    background-image: url(../../assets/images/portfolio-1.png);
   }
 
   &_background2 {
-    background-image: url(../../assets/images/tile2.png);
-    background-position-x: -82px;
-    background-position-y: center;
+    background-image: url(../../assets/images/portfolio-2.png);
   }
 
   &_background3 {
-    background-image: url(../../assets/images/tile3.png);
-    background-position-x: -11px;
-    background-position-y: -1px;
+    background-image: url(../../assets/images/portfolio-3.png);
   }
 
   &_background4 {
-    background-image: url(../../assets/images/tile4.png);
-    background-position-x: -24px;
-    background-position-y: -2px;
+    background-image: url(../../assets/images/portfolio-4.png);
   }
 
   &_background5 {
-    background-image: url(../../assets/images/tile5.png);
-    background-position-x: -10px;
-    background-position-y: -16px;
+    background-image: url(../../assets/images/portfolio-5.png);
   }
 
   &_background6 {
-    background-image: url(../../assets/images/tile6.png);
-    background-position-x: -16px;
-    background-position-y: -4px;
+    background-image: url(../../assets/images/portfolio-6.png);
   }
 
   &_background7 {
-    background-image: url(../../assets/images/tile7.png);
-    background-position-x: -31px;
-    background-position-y: -39px;
+    background-image: url(../../assets/images/portfolio-7.png);
   }
 
   &_background8 {
-    background-image: url(../../assets/images/tile8.png);
-    background-position-x: -24px;
-    background-position-y: -32px;
+    background-image: url(../../assets/images/portfolio-8.png);
   }
 
   &_background9 {
-    background-image: url(../../assets/images/tile9.png);
-    background-position-x: -16px;
-    background-position-y: -2px;
+    background-image: url(../../assets/images/portfolio-9.png);
   }
 
   &_background10 {
-    background-image: url(../../assets/images/tile10.png);
-    background-position-x: -141px;
-    background-position-y: -113px;
+    background-image: url(../../assets/images/portfolio-10.png);
   }
 
   &_background11 {
-    background-image: url(../../assets/images/tile11.png);
-    background-position-x: -144px;
-    background-position-y: -175px;
+    background-image: url(../../assets/images/portfolio-11.png);
   }
 
   &_background12 {
-    background-image: url(../../assets/images/tile12.png);
-    background-position-x: -36px;
-    background-position-y: -60px;
+    background-image: url(../../assets/images/portfolio-12.png);
   }
 }

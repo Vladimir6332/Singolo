@@ -1,11 +1,19 @@
 .footer {
   @include bg-shadow($bg-color: $color-background1);
+
+  @include media-tablet-small {
+    box-shadow: none;
+  }
 }
 
 .footer-wrapper {
   @include flex-h-v(space-between, center);
   padding-bottom: 9px;
   padding-top: 4px;
+
+  @include media-mobile {
+    justify-content: center;
+  }
 }
 
 .footer__info {
@@ -13,4 +21,8 @@
   margin: 0;
   text-align: center;
   color: $color-title1;
+
+  @include media-mobile {
+    display: none;
+  }
 }

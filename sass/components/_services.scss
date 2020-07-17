@@ -1,12 +1,43 @@
 .services {
   @include bg-shadow($bg-color: $color-background3);
+
+  @include media-tablet-small {
+    box-shadow: none;
+  }
 }
 
 .services__list {
   list-style: none;
   margin-top: 45px;
+
+  @include media-tablet {
+    margin-top: 35px;
+    padding-right: 34px;
+    justify-content: space-between;
+  }
+
+  @include media-tablet-small {
+    padding-right: 25px;
+    justify-content: center;
+  }
+
+  @include media-mobile {
+    margin-top: 25px;
+    padding-right: 13px;
+  }
 }
 
 .services__item {
   margin-bottom: 19px;
+
+  @include media-tablet {
+    flex-basis: calc((100% - 53px) / 2);
+    margin-right: 0;
+    margin-bottom: 38px;
+  }
+
+  @include media-tablet-small {
+    flex-basis: 100%;
+    margin-bottom: 14px;
+  }
 }

@@ -1,20 +1,51 @@
 .wrapper {
+  box-sizing: border-box;
+  width: 100%;
   max-width: $content-width;
   padding: 0 40px;
+
+  @include media-tablet-small {
+    padding: 0 30px;
+  }
+}
+
+.services-wrapper,
+.portfolio-wrapper,
+.about-us-wrapper,
+.get-quote-wrapper {
+  padding-top: 34px;
+
+  @include media-tablet {
+    padding-top: 14px;
+  }
+
+  @include media-mobile {
+    padding-top: 1px;
+  }
 }
 
 .services-wrapper {
-  padding-top: 34px;
   padding-bottom: 36px;
+
+  @include media-tablet {
+    padding-bottom: 0;
+  }
+
+  @include media-tablet-small {
+    padding-bottom: 0;
+  }
 }
 
 .portfolio-wrapper,
 .about-us-wrapper {
-  padding-top: 34px;
   padding-bottom: 53px;
+
+  @include media-tablet-small {
+    padding-bottom: 21px;
+    box-shadow: none;
+  }
 }
 
 .get-quote-wrapper {
-  padding-top: 34px;
   padding-bottom: 27px;
 }

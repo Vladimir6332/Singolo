@@ -2,6 +2,7 @@
 @import 'abstract/constants';
 @import 'abstract/mixins';
 @import 'abstract/placeholders';
+@import 'abstract/functions';
 
 //Layouts
 @import 'layouts/wrapper';
@@ -16,6 +17,7 @@
 @import 'base/ico';
 @import 'base/tabs';
 @import 'base/form';
+@import 'base/hamburger';
 
 //Components
 @import 'components/slider';

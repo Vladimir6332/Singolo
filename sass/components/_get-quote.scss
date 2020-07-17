@@ -1,5 +1,9 @@
 .get-quote {
   @include bg-shadow($bg-color: $color-background2);
+
+  @include media-tablet-small {
+    box-shadow: none;
+  }
 }
 
 .get-quote__title,
@@ -10,13 +14,28 @@
 .get-quote__form {
   display: flex;
   margin-top: 44px;
+
+  @include media-tablet-small {
+    flex-direction: column;
+  }
 }
 
 .form-wrapper {
   margin-right: 20px;
   flex-grow: 1;
+
+  @include media-tablet-small {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
 }
 
 .contact-wrapper {
-  flex-basis: 300px;
+  flex-basis: responsive-size(300px);
+  max-width: 300px;
+
+  @include media-tablet-small {
+    width: 100%;
+    max-width: none;
+  }
 }

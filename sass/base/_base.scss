@@ -3,7 +3,8 @@ html {
 }
 
 body {
-  width: $content-width;
+  width: 100%;
+  max-width: $content-width;
   margin: 0 auto;
   font-family: 'Lato', 'AdobeInvisFont', 'MyriadPro-Regular';
   font-size: 1.8rem;

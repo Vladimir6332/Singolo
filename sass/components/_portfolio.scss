@@ -1,7 +1,11 @@
 .portfolio {
   @include bg-shadow($bg-color: $color-background1);
+
+  @include media-tablet-small {
+    box-shadow: none;
+  }
 }
 
 .tabs-wrapper {
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }

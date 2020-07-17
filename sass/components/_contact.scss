@@ -14,6 +14,10 @@
 
 .contact__list {
   list-style: none;
+
+  @include media-tablet-small {
+    margin-bottom: 5px;
+  }
 }
 
 .contact__item {

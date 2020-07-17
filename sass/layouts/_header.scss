@@ -1,10 +1,27 @@
 .header {
-  padding: 28px 0 37px 0;
   @include bg-shadow($bg-color: $color-background1);
+  @include media-tablet-small {
+    box-shadow: none;
+  }
 }
 
 .header__wrapper {
   @include flex-h-v(space-between, flex-end);
+  padding-top: 28px;
+  padding-bottom: 37px;
+
+  @include media-tablet-small {
+    padding: 23px 30px 23px 20px;
+    justify-content: flex-start;
+  }
+}
+
+.hamburger-wrapper {
+  display: none;
+
+  @include media-tablet-small {
+    display: inline-block;
+  }
 }
 
 .header__navigation {

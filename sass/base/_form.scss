@@ -1,6 +1,3 @@
-.form {
-}
-
 .form__list {
   display: flex;
   flex-wrap: wrap;
@@ -23,6 +20,10 @@
   border-radius: 5px;
   @include font($size: 1.2rem, $height: 1.2rem, $weight: 400);
   color: $color-input-text;
+
+  @include media-tablet {
+    margin-bottom: 12px;
+  }
 
   &:invalid {
     border: 1px solid red;
@@ -55,6 +56,10 @@
   color: #fff;
   text-align: center;
   cursor: pointer;
+
+  @include media-tablet-small {
+    width: 100%;
+  }
 }
 
 .form__button-submit:hover {

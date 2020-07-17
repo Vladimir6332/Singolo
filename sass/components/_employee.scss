@@ -1,6 +1,21 @@
 .employee__image {
   width: 100%;
-  height: 300px;
+  height: calc((100vw - 120px) / 3);
+  max-height: 300px;
+  background-size: 100%;
+  @extend %bg-single-center;
+
+  @include media-tablet {
+    height: calc((100vw - 108px) / 3);
+  }
+
+  @include media-tablet-small {
+    height: 40vw;
+  }
+  @include media-mobile {
+    height: calc(100vw - 60px);
+    max-height: none;
+  }
 
   &_employee1 {
     background-image: url(../../assets/images/member1.png);
@@ -24,4 +39,8 @@
   margin-bottom: 22px;
   @include font($size: 1.2rem, $height: 2.2rem, $weight: 400);
   text-align: justify;
+}
+
+.employee__social {
+  margin-top: auto;
 }

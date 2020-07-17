@@ -1,9 +1,17 @@
 .about-us {
   @include bg-shadow($bg-color: $color-background3);
+
+  @include media-tablet-small {
+    box-shadow: none;
+  }
 }
 
 .employees-wrapper {
   margin-top: 45px;
+
+  @include media-tablet-small {
+    margin-top: 31px;
+  }
 }
 
 .about-us__list {
@@ -13,9 +21,34 @@
   > :nth-child(3n) {
     margin-right: 0;
   }
+
+  @include media-tablet-small {
+    justify-content: space-around;
+  }
+
+  @include media-mobile {
+    margin-bottom: 4px;
+  }
 }
 
 .about-us__item {
+  display: flex;
+  flex-direction: column;
   flex-basis: calc((100% - 41px) / 3);
   margin-right: 20px;
+
+  @include media-tablet {
+    flex-basis: calc((100% - 28px) / 3);
+    margin-right: 14px;
+  }
+
+  @include media-tablet-small {
+    flex-basis: 40vw;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  @include media-mobile {
+    flex-basis: calc(100vw - 60px);
+  }
 }

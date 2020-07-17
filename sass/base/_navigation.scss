@@ -1,4 +1,7 @@
 .navigation {
+  @include media-tablet-small {
+    display: none;
+  }
 }
 
 .navigation__list {

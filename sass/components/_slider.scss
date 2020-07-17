@@ -1,11 +1,23 @@
 .slider {
   position: relative;
   @include bg-shadow($bg-color: $color-background2, $shadow-color: #ea676b);
+  height: responsive-size(600px);
+  max-height: 600px;
+
+  @include media-tablet-small {
+    box-shadow: none;
+  }
+}
+
+.slider-wrapper {
+  height: 100%;
 }
 
 .slider__list {
   @include flex-h-v();
-  height: 600px;
+  width: 100%;
+  height: 100%;
+
   overflow: hidden;
   list-style: none;
 }
@@ -21,10 +33,24 @@
   width: 100%;
   height: 100%;
   padding: 105px 0 0 72px;
+
+  @include media-laptop {
+    padding: responsive-size(105px) responsive-size(24px) 0
+      responsive-size(72px);
+  }
+
+  @include media-mobile {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .phone-horizontal-wrapper {
   padding-left: 220px;
+
+  @include media-laptop {
+    padding-left: responsive-size(220px);
+  }
 }
 
 .slider__arrow {
@@ -37,18 +63,42 @@
   background-repeat: no-repeat;
   cursor: pointer;
 
+  @media (max-width: 600px) {
+    background-size: 14px;
+  }
+
   &_left {
     top: 278px;
     left: 40px;
+
+    @include media-laptop {
+      top: responsive-size(278px);
+      left: responsive-size(40px);
+    }
+    @media (max-width: 600px) {
+      left: 10px;
+    }
   }
 
   &_right {
     top: 278px;
     right: 38px;
     transform: rotate(180deg);
+
+    @include media-laptop {
+      top: responsive-size(278px);
+      right: responsive-size(38px);
+    }
+    @media (max-width: 600px) {
+      right: 10px;
+    }
   }
 
   &:hover {
     background-size: 19px;
+
+    @include media-laptop {
+      background-size: responsive-size(19px);
+    }
   }
 }
